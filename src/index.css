@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #03000a !important; /* Deep space black */
+  color: #f1e9ff !important;
+  font-family: "Roboto", sans-serif;
+  transition-property: color, background-color;
+  transition-duration: 300ms;
+}
+
+/* Dark mode styles */
+html.dark {
+  background-color: #03000a !important;
+  color: #ffffff !important;
+}
+
+/* Tailwind CSS classes used for responsiveness and sticky positioning */
+@layer utilities {
+  .sticky-top-0 {
+    position: sticky;
+    top: 0;
+  }
+}
+
+/* Futuristic Black and Purple Global Theme */
+.bg-white,
+.bg-gray-50,
+.bg-gray-100,
+.bg-gradient-to-b,
+.bg-base-100 {
+  background: #09070f !important; /* Sleek dark card background */
+  background-image: none !important;
+  border: 1px solid rgba(139, 92, 246, 0.15) !important; /* Violet/purple border */
+  box-shadow: 0 4px 20px rgba(139, 92, 246, 0.05) !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.text-gray-800,
+.text-gray-900,
+.text-slate-800 {
+  color: #ffffff !important;
+}
+
+p, span,
+.text-gray-700,
+.text-gray-600,
+.text-gray-500,
+.text-slate-500 {
+  color: #c0b3d6 !important; /* Muted purple-grey text */
+}
+
+/* Button & interactive components styling */
+button,
+.btn-primary,
+.bg-blue-500 {
+  background: linear-gradient(135deg, #7c3aed 0%, #d946ef 100%) !important; /* Neon purple to fuchsia gradient */
+  color: #ffffff !important;
+  border: none !important;
+}
+
+button:hover,
+.bg-blue-600:hover {
+  background: linear-gradient(135deg, #6d28d9 0%, #c026d3 100%) !important;
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.4) !important;
+}
+
+/* Tables, Inputs & Modals */
+table {
+  background-color: #09070f !important;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #120f1d !important;
+  color: #d8b4fe !important; /* Lavender color */
+  border-bottom: 1px solid rgba(139, 92, 246, 0.2) !important;
+}
+
+tr:hover {
+  background-color: #151124 !important;
+}
+
+td {
+  border-bottom: 1px solid rgba(139, 92, 246, 0.1) !important;
+  color: #e9d5ff !important;
+}
+
+input, select, textarea {
+  background-color: #120f1d !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(139, 92, 246, 0.3) !important;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #a855f7 !important;
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.3) !important;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #03000a;
+}
+::-webkit-scrollbar-thumb {
+  background: #2e1065;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4c1d95;
+}
