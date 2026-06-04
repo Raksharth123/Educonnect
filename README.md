@@ -5,7 +5,7 @@ A full-stack MERN application that connects students, teachers, and admins on a 
 ---
 
 ## 🚀 Live Demo
-🔗 Coming Soon
+🔗 https://educonnect-ten-ashen.vercel.app
 
 ---
 
